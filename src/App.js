@@ -29,17 +29,16 @@ function App() {
   }, []);
   const onSignInGoogle = (error, user) => {
     const output = "signin_google_output";
-    document.getElementById(output).innerHTML = "";
 
     if(error) {
       if(error.code == "409") {
           alert(error.message);
           return;
       }
-      document.getElementById(output).innerHTML = JSON.stringify(error, null, 2);
+      alert(JSON.stringify(error, null, 2));
       return;
     }
-    document.getElementById(output).innerHTML = JSON.stringify(user, null, 2);
+    alert(JSON.stringify(user, null, 2));
 
   }
   const handleLogin = (e) => {
