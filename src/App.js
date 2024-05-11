@@ -8,7 +8,6 @@ function App() {
   const [password, setPassword] = useState('');
   useEffect(() => {
     var project_id = "85ecd393-82b1-4c74-965c-d85c321772da";
-
     var gamepotConfig = {
       google_signin_client_id: "88223050813-b6lf4hmk7t081a2f92bueb8oqhigvif5.apps.googleusercontent.com",
       google: {
@@ -117,6 +116,34 @@ function App() {
     })
   };
 
+  const handleKakaoLogin = () => {
+    console.log("Kakao login clicked");
+    // 여기에 애플 로그인 로직을 구현
+     GP.login(GP.ChannelType.APPLE, function( user, error) {
+        if (error) {
+          if(error.code == "409") { // 탈퇴시에 처리
+              alert(error.message);
+              return;
+          }
+        } else {
+        }
+    })
+  };
+
+  const handleLineLogin = () => {
+    console.log("Line login clicked");
+    // 여기에 애플 로그인 로직을 구현
+     GP.login(GP.ChannelType.APPLE, function( user, error) {
+        if (error) {
+          if(error.code == "409") { // 탈퇴시에 처리
+              alert(error.message);
+              return;
+          }
+        } else {
+        }
+    })
+  };
+
   return (
     <div style={{ maxWidth: '320px', margin: 'auto', padding: '20px' }}>
       <h2>Login</h2>
@@ -153,6 +180,12 @@ function App() {
         </button>
         <button onClick={handleAppleLogin} style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white' }}>
           Login with Apple
+        </button>
+        <button onClick={handleKakaoLogin} style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white' }}>
+          Login with Kakao
+        </button>
+        <button onClick={handleLineLogin} style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white' }}>
+          Login with Line
         </button>
       </div>
     </div>
