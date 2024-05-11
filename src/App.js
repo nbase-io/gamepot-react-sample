@@ -7,10 +7,10 @@ function App() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   useEffect(() => {
-    var project_id = "[PROJECT_ID]";
+    var project_id = "85ecd393-82b1-4c74-965c-d85c321772da";
 
     var gamepotConfig = {
-      google_signin_client_id: "362179701982-vna81n6uvr650qghs5sabcickk51rqur.apps.googleusercontent.com",
+      google_signin_client_id: "88223050813-b6lf4hmk7t081a2f92bueb8oqhigvif5.apps.googleusercontent.com",
       google: {
         "callback" : onSignInGoogle,
         "renderButton" : "renderButton",  // 버튼 DIV 이름
