@@ -116,7 +116,7 @@ function App() {
   const handleKakaoLogin = () => {
     console.log("Kakao login clicked");
     // 여기에 애플 로그인 로직을 구현
-     GP.login(GP.ChannelType.APPLE, function( user, error) {
+     GP.login(GP.ChannelType.KAKAO, function( user, error) {
         if (error) {
           if(error.code == "409") { // 탈퇴시에 처리
               alert(error.message);
@@ -130,7 +130,7 @@ function App() {
   const handleLineLogin = () => {
     console.log("Line login clicked");
     // 여기에 애플 로그인 로직을 구현
-     GP.login(GP.ChannelType.APPLE, function( user, error) {
+     GP.login(GP.ChannelType.LINE, function( user, error) {
         if (error) {
           if(error.code == "409") { // 탈퇴시에 처리
               alert(error.message);
