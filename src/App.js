@@ -83,10 +83,7 @@ function App() {
     });
     // 로그인 처리 로직 구현
   };
-  const handleGoogleLogin = () => {
-    console.log("Google login clicked");
-    // 여기에 구글 로그인 로직을 구현
-  };
+ 
 
   const handleFacebookLogin = () => {
     console.log("Facebook login clicked");
