@@ -18,7 +18,7 @@ function App() {
           'theme' : 'outline'
         }
       },
-      facebook_app_id: "1866239820465659",
+      facebook_app_id: "964432725411752",
       apple_client_id: "io.nbase.services",
       apple_redirect_uri: "https://gamepot-react-sample.vercel.app/callback",
       kakao_client_id: "5ca59626b1f34b2f73192dfe261412fd",
