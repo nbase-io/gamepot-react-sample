@@ -20,8 +20,8 @@ function App() {
       },
       facebook_app_id: "1866239820465659",
       apple_client_id: "io.nbase.services",
-      apple_redirect_uri: "https://localhost/callback/",
-      kakao_client_id: "8f8cabd4f1c713b98b5d01c36881e24",
+      apple_redirect_uri: "https://gamepot-react-sample.vercel.app/callback",
+      kakao_client_id: "5ca59626b1f34b2f73192dfe261412fd",
       plugin_url: "",
     };
     GP.initialize(project_id, gamepotConfig);
