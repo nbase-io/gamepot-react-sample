@@ -109,6 +109,7 @@ function App() {
               return;
           }
         } else {
+          alert(JSON.stringify(user, null, 2));
         }
     })
   };
@@ -123,6 +124,7 @@ function App() {
               return;
           }
         } else {
+          alert(JSON.stringify(user, null, 2));
         }
     })
   };
@@ -137,6 +139,7 @@ function App() {
               return;
           }
         } else {
+          alert(JSON.stringify(user, null, 2));
         }
     })
   };
