@@ -18,10 +18,10 @@ function App() {
           'theme' : 'outline'
         }
       },
-      facebook_app_id: "289281652674771",
+      facebook_app_id: "1866239820465659",
       apple_client_id: "io.nbase.services",
       apple_redirect_uri: "https://localhost/callback/",
-      kakao_client_id: "5ca59626b1f34b2f73192dfe261412fd",
+      kakao_client_id: "8f8cabd4f1c713b98b5d01c36881e24",
       plugin_url: "",
     };
     GP.initialize(project_id, gamepotConfig);
@@ -175,13 +175,13 @@ function App() {
         <button onClick={handleFacebookLogin} style={{ width: '100%', padding: '10px', marginBottom: '10px', backgroundColor: '#3b5998', color: 'white' }}>
           Login with Facebook
         </button>
-        <button onClick={handleAppleLogin} style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white' }}>
+        <button onClick={handleAppleLogin} style={{ width: '100%', padding: '10px', marginBottom: '10px', backgroundColor: '#000', color: 'white' }}>
           Login with Apple
         </button>
-        <button onClick={handleKakaoLogin} style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white' }}>
+        <button onClick={handleKakaoLogin} style={{ width: '100%', padding: '10px', marginBottom: '10px', backgroundColor: '#FFCD00', color: 'white' }}>
           Login with Kakao
         </button>
-        <button onClick={handleLineLogin} style={{ width: '100%', padding: '10px', backgroundColor: '#000', color: 'white' }}>
+        <button onClick={handleLineLogin} style={{ width: '100%', padding: '10px', marginBottom: '10px', backgroundColor: '#00C300', color: 'white' }}>
           Login with Line
         </button>
       </div>
